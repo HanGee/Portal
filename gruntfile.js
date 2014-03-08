@@ -13,23 +13,30 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         cwd: 'src/',
-                        src: 'public/images/**/*',
+                        src: 'public/img/**/*',
+                        dest: 'build/'
+                    },{
+                        expand: true,
+                        cwd: 'src/',
+                        src: 'vendor/**/css/**.css',
+                        dest: 'build/'
+                    },{
+                        expand: true,
+                        cwd: 'src/',
+                        src: ['vendor/**/*.min.js', 'vendor/**/*.min.js.map'],
                         dest: 'build/'
                     },
-
                 ]
             }
         },
         uglify: {
             options: {
-                compress: false,
-                beautify: true,
                 mangle: false,
                 sourceMap: 'build/public/js/main.min.js.map'
             },
             target: {
                 files: {
-                    'build/public/js/main.min.js': ['src/public/js/*.js']
+                    'build/public/js/main.js': ['src/public/js/*.js']
                 }
             }
         },

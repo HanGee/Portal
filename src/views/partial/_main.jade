@@ -1,3 +1,75 @@
-.row
-    .columns.large-5.small-12
-        h1 Hello HanGee
+section.main
+  .column.small-10.medium-8.small-centered.white
+    h1 Hello HanGee
+    p some text goes here some text
+
+section.intro
+  .column.small-10.medium-8.small-centered
+    h1 計劃簡介
+    p Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.
+
+section.goal
+  .column.small-10.medium-9.small-centered.white
+    h1 Goal
+    .row
+      .columns.small-4
+        span.fa.fa-cloud.fa-4x
+        h2 Cloud
+        p Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod 
+      .columns.small-4
+        span.fa.fa-flash.fa-4x
+        h2 Speed
+        p Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod 
+      .columns.small-4
+        span.fa.fa-group.fa-4x
+        h2 Group
+        p Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod 
+
+section.spec
+  .column.small-10.medium-9.small-centered
+    h1 Spec
+    p Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod 
+    .row
+      table.column.small-10.small-centered
+        tbody
+          tr
+            td spec1
+            td Donec id elit non mi porta gravida at eget metus.
+            td Content Goes Here
+          tr
+            td spec2
+            td
+              | Donec id elit non mi porta gravida at eget metus.
+            td Content Goes Here
+          tr
+            td spec3
+            td
+              | longer Content Goes Here Donec id elit non mi porta gravida at eget metus.
+            td Content Goes Here
+
+section.recruit
+  .column.small-10.medium-8.small-centered
+    h1 Welcome to join
+    p Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod 
+    form.client_contact
+      .row
+        .columns.small-6
+          input(type='text', placeholder='Name', required)
+        .columns.small-6
+          input(type='email', placeholder='Email', required)
+      .row
+        .column.small-12
+          textarea.user_msg(name='message', placeholder='Message', reuired)
+    .column.small-6.small-centered
+      a.radius.button.expand Send
+
+section#footer
+  .column.small-10.medium-8.small-centered
+    ul
+      li
+        a(href='#').fa.fa-github.fa-2x
+      li
+        a(href='#').fa.fa-facebook.fa-2x
+      li
+        a(href='#').fa.fa-twitter.fa-2x
+    p HanGee 2014. 

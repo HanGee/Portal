@@ -11,6 +11,7 @@ pids
 logs
 results
 build
+.sass-cache
 
 npm-debug.log
 node_modules

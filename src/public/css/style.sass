@@ -1,24 +1,7 @@
-// ref
-// http://www.slideshare.net/sfismy/sass-31257014
-// page 41
-
-@import "compass"
-@import "../../vendor/foundation/scss/foundation.scss"
-
 // --------------------
 // mixin
 // --------------------
 @import "mixin"
-
-// --------------------
-// reset
-// --------------------
-@import "reset"
-
-// --------------------
-// extend
-// --------------------
-// @import "extend"
 
 // --------------------
 // layout
@@ -35,27 +18,11 @@
 // --------------------
 // @import "page"
 // @import "widght_xxxxx"
+@import url(http://fonts.googleapis.com/css?family=Roboto:100)
 
 
-.box
-    @include border-radius(10px)
 
-h1, h2, h3, h4, h5, p, span
-    color: #fff
-    text-shadow: -1px 1px 2px #555555
-
-
-.row
-    > div
-        padding: 5em 2em
-        font-family: 'Helvetica Neue', Helvetica, Arial, "微軟正黑體", "Microsoft Jhenghei", sans-serif
-    .columns > div
-        margin-bottom: 2em
-
-footer
-    text-align: center
-    padding-bottom: 4em
-    p
-        margin: 6px
-        font-size: 0.8rem
+body
+  font-family: 'Helvetica Neue', Helvetica, Arial, "微軟正黑體", "Microsoft Jhenghei", sans-serif
+  background: #f5f5f5
 
