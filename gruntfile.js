@@ -23,7 +23,7 @@ module.exports = function (grunt) {
                     },{
                         expand: true,
                         cwd: 'src/',
-                        src: ['vendor/**/*.min.js', 'vendor/**/*.min.js.map'],
+                        src: ['vendor/**/*.min.js', 'vendor/**/*.min.map'],
                         dest: 'build/'
                     },
                 ]
