@@ -12,6 +12,7 @@ logs
 results
 build
 .sass-cache
+.grunt
 
 npm-debug.log
 node_modules
