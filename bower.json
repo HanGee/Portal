@@ -1,0 +1,19 @@
+{
+  "name": "HanGee",
+  "version": "0.0.1",
+  "description": "HanGee Portal",
+  "homepage": "https://github.com/HanGee/Portal",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "jquery-placeholder": "~2.0.7",
+    "modernizr": "~2.7.2",
+    "foundation": "~5.2.0"
+  }
+}
