@@ -43,6 +43,11 @@ section
     margin-bottom: 25px
 
 .intro
+  text-align: justify
+  .author
+    padding: 1em 0
+    color: #666
+    float: right
 
 .recruit
   padding: 10em 1em
@@ -50,6 +55,23 @@ section
   background: #fff
   .user_msg
     min-height: 15em
+  ul
+    margin: 2em 0
+    padding: 0
+  li
+    display: inline-block
+    padding-left: 0.75em
+  .fa
+    @extend .icon_round
+    @include transition(0.25)
+    border: 1px solid #d6d6d6
+    color: #aaa
+  .fa:hover
+    color: #007295
+    border: 1px solid #007295
+  .hackpad-icon
+    font-size: 2em
+    
 
 .white 
   h1, p
@@ -71,18 +93,3 @@ section
 
 section#footer
   padding: 3em 2em
-  ul
-    margin: 2em 0
-    padding: 0
-  li
-    display: inline-block
-    padding-left: 0.75em
-  .fa
-    @extend .icon_round
-    @include transition(0.25)
-    border: 1px solid #d6d6d6
-    color: #aaa
-  .fa:hover
-    color: #444
-    border: 1px solid #555
-    

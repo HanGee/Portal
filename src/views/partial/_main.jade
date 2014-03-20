@@ -1,14 +1,19 @@
 section.main
   .column.small-11.medium-8.small-centered.white
-    h1 Hello HanGee
-    p some text goes here some text
+    h1 Project HanGee
+    p A mobile phone embraced and enjoyed by everyone.
 
 section.intro
   .column.small-11.medium-8.small-centered
-    h1 計劃簡介
-    p Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.
+    h1 計劃理念
+    p HanGee 的初衷非常單純，只是覺得沒有技術的人都可以做出手機上市，我們懂技術、懂得做手機的人，為什麼做不出一支不遜色的手機出來呢？於是，我們發起了 HanGee 國民機的運動。
+    p 我們希望做一支國民機，一支大家都能認同的手機。
+    p 我們其實相當明白，想要滿足所有人的需求相當困難，但是我們至少可以讓『大家共同參與手機打造的過程』。若能在這支手機的催生過程中，讓台灣各個角落的創新團隊們，以及讓大小公司展現各自的價值，無論來頭大小都能嘗試合作，扮演好各自的角色，HanGee 就已經足夠稱的上是支國民機了。
+    p 也許你是有想法的專業設計師、也許你是硬梆梆的硬體專家、也許你是熱血的軟體工程師、也許你是飢渴地吸收新知的學生、也許你是有能力量產的廠商，又或者是一個有品牌、有能力服務大眾但缺少好東西推銷的公司。只要你願意參與其中，做好自己的專業，甚至成為 HanGee 計劃的導師(Mentor)， HanGee 或許真有機會做到改變生態的創舉。
+    p 無論有多麼理想化，我們仍然期望 HanGee 能促成科技版的『看見台灣』，讓眾人透過 HanGee 計劃看見台灣人才的熱情和原創實力。
+    em.author - Fred Chien
 
-section.goal
+//-section.goal
   .column.small-11.medium-9.small-centered.white
     h1 Goal
     .row
@@ -25,7 +30,7 @@ section.goal
         h2 Group
         p Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod 
 
-section.spec
+//-section.spec
   .column.small-11.medium-9.small-centered
     h1 Spec
     p Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod 
@@ -49,27 +54,31 @@ section.spec
 
 section.recruit
   .column.small-11.medium-8.small-centered
-    h1 Welcome to join
-    p Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod 
-    form.client_contact.small-12
+    h1 Join to make a difference
+    p 只要你有想法、有熱誠，歡迎你加入我們的行列
+    ul
+      li
+        a(href='mailto:owahangee@gmail.com', target="_top").fa.fa-envelope.fa-2x
+      li
+        a(href='https://github.com/HanGee', target='_blanck').fa.fa-github.fa-2x
+      li
+        a(href='https://www.facebook.com/groups/HanGee/', target='_blank').fa.fa-facebook.fa-2x
+      li
+        a.fa.hackpad-icon(href='https://hangee.hackpad.com/', target='_blank', title='HanGee Hackpad') H
+      //-li
+        a(href='#').fa.fa-twitter.fa-2x
+    //-form.client_contact.small-12
       .row
         .columns.small-12.medium-6
           input(type='text', placeholder='Name', required)
         .columns.small-12.medium-6
           input(type='email', placeholder='Email', required)
-      .row
+      .row  
         .column.small-12
           textarea.user_msg(name='message', placeholder='Message', reuired)
-    .column.small-12.medium-6.small-centered
+    //-.column.small-12.medium-6.small-centered
       a.radius.button.expand Send
 
 section#footer
   .column.small-11.medium-8.small-centered
-    ul
-      li
-        a(href='#').fa.fa-github.fa-2x
-      li
-        a(href='#').fa.fa-facebook.fa-2x
-      li
-        a(href='#').fa.fa-twitter.fa-2x
     p HanGee 2014. 
