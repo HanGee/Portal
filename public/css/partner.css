@@ -39,7 +39,7 @@ body {
   .partner h2, .partner h3, .partner h4, .partner p, .partner span {
     color: #666666;
     text-align: center; }
-  .partner small {
+  .partner p {
     float: right;
     color: black; }
 
