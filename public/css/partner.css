@@ -41,11 +41,11 @@ body {
     text-align: center; }
   .partner small {
     float: right;
-    color: #777777; }
+    color: black; }
 
 .navbar ul li a {
-  color: #555555;
-  border: 1px solid #d5d5d5; }
+  color: #353535;
+  border: 1px solid #727272; }
 
 .org_group {
   padding: 10px;
