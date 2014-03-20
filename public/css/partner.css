@@ -2,7 +2,8 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:100);
 #main-container {
   background: whitesmoke;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 .navbar {
   position: absolute;
@@ -38,6 +39,9 @@ body {
   .partner h2, .partner h3, .partner h4, .partner p, .partner span {
     color: #666666;
     text-align: center; }
+  .partner small {
+    float: right;
+    color: #777777; }
 
 .navbar ul li a {
   color: #555555;

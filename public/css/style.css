@@ -2,9 +2,10 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:100);
 #main-container {
   background: whitesmoke;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
-.icon_round, .goal .fa, #recruit .fa {
+.icon_round, .goal .fa, #join .fa {
   display: inline-block;
   text-align: center;
   color: white;
@@ -51,19 +52,19 @@ section {
   .intro p {
     line-height: 1.9; }
 
-#recruit {
+#join {
   padding: 10em 1em;
   color: #666666;
   background: white; }
-  #recruit .user_msg {
+  #join .user_msg {
     min-height: 15em; }
-  #recruit ul {
+  #join ul {
     margin: 2em 0;
     padding: 0; }
-  #recruit li {
+  #join li {
     display: inline-block;
     padding-left: 0.75em; }
-  #recruit .fa {
+  #join .fa {
     -moz-transition: all 0.25 ease-in-out;
     -webkit-transition: all 0.25 ease-in-out;
     -o-transition: all 0.25 ease-in-out;
@@ -71,10 +72,10 @@ section {
     transition: all 0.25 ease-in-out;
     border: 1px solid #d6d6d6;
     color: #aaaaaa; }
-  #recruit .fa:hover {
+  #join .fa:hover {
     color: #007295;
     border: 1px solid #007295; }
-  #recruit .hackpad-icon {
+  #join .hackpad-icon {
     font-size: 2em; }
 
 .white h1, .white p {
