@@ -46,7 +46,8 @@ module.exports = function (grunt) {
                     pretty: true
                 },
                 files: {
-                    'build/index.html': 'src/views/index.jade'
+                    'build/index.html': 'src/views/index.jade',
+                    'build/partner.html': 'src/views/partner.jade'
                 }
             }
         },
@@ -56,7 +57,8 @@ module.exports = function (grunt) {
                     compass: true
                 },
                 files: {
-                    'build/public/css/style.css': 'src/public/css/style.sass'
+                    'build/public/css/style.css': 'src/public/css/style.sass',
+                    'build/public/css/partner.css': 'src/public/css/partner.sass'
                 }
             }
         },
