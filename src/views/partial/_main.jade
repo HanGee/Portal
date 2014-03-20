@@ -3,6 +3,19 @@ section.main
     h1 Project HanGee
     p A mobile phone embraced and enjoyed by everyone.
 
+section.begins
+  .column.small-11.medium-8.small-centered
+    h1 緣起
+    #fb-root
+      script.
+        (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = '//connect.facebook.net/en_US/all.js#xfbml=1'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));
+    .fb-post(data-href='https://www.facebook.com/fred.chien.9/posts/814456768567666', data-width='600')
+      .fb-xfbml-parse-ignore
+        a(href='https://www.facebook.com/fred.chien.9/posts/814456768567666') Post
+        |  by 
+        a(href='https://www.facebook.com/fred.chien.9') Fred Chien
+        | .
+
 section.intro
   .column.small-11.medium-8.small-centered
     h1 計劃理念
@@ -58,7 +71,7 @@ section#recruit
     p 歡迎有想法、有熱誠的夥伴，加入我們的行列
     ul
       li
-        a(href='mailto:owahangee@gmail.com', target="_top").fa.fa-envelope.fa-2x
+        a(href='mailto:owahangee@gmail.com', target='_top').fa.fa-envelope.fa-2x
       li
         a(href='https://github.com/HanGee', target='_blanck').fa.fa-github.fa-2x
       li
