@@ -35,15 +35,20 @@ body {
 .partner {
   background: whitesmoke;
   padding: 4em 1em; }
-  .partner h2, .partner h4, .partner p, .partner span {
+  .partner h2, .partner h3, .partner h4, .partner p, .partner span {
     color: #666666;
-    text-align: justify; }
+    text-align: center; }
 
 .navbar ul li a {
   color: #555555;
-  border: 1px solid #a3a3a3; }
+  border: 1px solid #d5d5d5; }
 
-.org_group .th {
-  margin: 1em; }
-  .org_group .th img {
-    height: 100px; }
+.org_group {
+  width: 280px;
+  padding: 10px;
+  border: 1px solid #d5d5d5;
+  margin: 1em auto; }
+  .org_group img {
+    width: 260px;
+    margin: 10px 0;
+    padding: 10px; }
