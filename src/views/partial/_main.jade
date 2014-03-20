@@ -1,3 +1,8 @@
+
+#fb-root
+  script.
+    (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = '//connect.facebook.net/en_US/all.js#xfbml=1'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));
+
 section.main
   .column.small-11.medium-8.small-centered.white
     h1 Project HanGee
@@ -6,9 +11,6 @@ section.main
 section.begins
   .column.small-11.medium-8.small-centered
     h1 緣起
-    #fb-root
-      script.
-        (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = '//connect.facebook.net/en_US/all.js#xfbml=1'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));
     .fb-post(data-href='https://www.facebook.com/fred.chien.9/posts/814456768567666', data-width='600')
       .fb-xfbml-parse-ignore
         a(href='https://www.facebook.com/fred.chien.9/posts/814456768567666') Post
