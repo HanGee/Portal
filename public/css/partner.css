@@ -44,11 +44,14 @@ body {
   border: 1px solid #d5d5d5; }
 
 .org_group {
-  width: 280px;
   padding: 10px;
   border: 1px solid #d5d5d5;
-  margin: 1em auto; }
-  .org_group img {
-    width: 260px;
-    margin: 10px 0;
-    padding: 10px; }
+  margin: 1em auto;
+  height: 320px; }
+  .org_group a {
+    float: left;
+    width: 30%;
+    margin: 0 1.5%;
+    line-height: 300px; }
+    .org_group a img {
+      width: 100%; }
