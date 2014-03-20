@@ -25,6 +25,9 @@ section {
   section h1 {
     margin-bottom: 0.5em; }
 
+.begins {
+  background: white; }
+
 .main {
   background: url("../img/header.jpg");
   background-size: cover;
