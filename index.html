@@ -14,38 +14,39 @@
   </head>
   <body>
     <div id="main-container">
-      <div class="navbar">
-        <h1 class="logo"><a href="#">HanGee</a></h1>
-        <nav>
-          <ul>
-            <li><a href="http://han-gee.com/">Home</a></li>
-            <li><a href="http://han-gee.com/zh-hant/blog">Blog</a></li>
-            <li><a href="http://han-gee.com/pages/partner.html">Partner</a></li>
-            <li><a href="http://han-gee.com/#join">Join</a></li>
-          </ul>
-        </nav>
-      </div>
       <div id="fb-root">
         <script>
           (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = '//connect.facebook.net/en_US/all.js#xfbml=1'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));
           
         </script>
       </div>
-      <section class="main">
+      <section id="intro" data-magellan-destination="intro">
         <div class="column small-11 medium-8 small-centered white">
-          <h1>Project HanGee</h1>
-          <p>A mobile phone embraced and enjoyed by everyone.</p>
+          <h1>HanGee</h1>
+          <h4>A <span>mobile phone</span> embraced and enjoyed by everyone.</h4><a href="#begins" class="start">Start</a>
         </div>
       </section>
-      <section class="begins">
+      <nav data-magellan-expedition="fixed" class="nav">
+        <ul class="sub-nav">
+          <li data-magellan-arrival="intro"><a href="#intro">首頁</a></li>
+          <li data-magellan-arrival="begins"><a href="#begins">緣起</a></li>
+          <li data-magellan-arrival="idea"><a href="#idea">理念</a></li>
+          <li data-magellan-arrival="goal"><a href="#goal">目標</a></li>
+          <li data-magellan-arrival="structure"><a href="#structure">運作架構</a></li>
+          <li data-magellan-arrival="partner"><a href="#partner">支持單位</a></li>
+          <li><a href="http://han-gee.com/zh-hant/blog">BLOG</a></li>
+          <li data-magellan-arrival="join"><a href="#join">聯絡我們</a></li>
+        </ul>
+      </nav>
+      <section id="begins" data-magellan-destination="begins">
         <div class="column small-11 medium-8 small-centered">
           <h1>緣起</h1>
-          <div data-href="https://www.facebook.com/fred.chien.9/posts/814456768567666" data-width="600" class="fb-post">
+          <div data-href="https://www.facebook.com/fred.chien.9/posts/814456768567666" data-width="640" class="fb-post">
             <div class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/fred.chien.9/posts/814456768567666">Post</a> by <a href="https://www.facebook.com/fred.chien.9">Fred Chien</a>.</div>
           </div>
         </div>
       </section>
-      <section class="intro">
+      <section id="idea" data-magellan-destination="idea">
         <div class="column small-11 medium-8 small-centered">
           <h1>計劃理念</h1>
           <p>HanGee 的初衷非常單純，只是覺得沒有技術的人都可以做出手機上市，我們懂技術、懂得做手機的人，為什麼做不出一支不遜色的手機出來呢？於是，我們發起了 HanGee 國民機的運動。</p>
@@ -55,10 +56,53 @@
           <p>無論有多麼理想化，我們仍然期望 HanGee 能促成科技版的『看見台灣』，讓眾人透過 HanGee 計劃看見台灣人才的熱情和原創實力。</p><em class="author">- Fred Chien</em>
         </div>
       </section>
-      <section id="join">
+      <section id="goal" data-magellan-destination="goal">
+        <div class="column small-11 medium-9 small-centered">
+          <h1>目標</h1>
+          <p class="description">HanGee 國民機運動的目標，不僅僅是打造一支手機，更重要的是，藉由打造手機的過程，讓世界能透過「HanGee」看見台灣的科技實力和人才；集結有想法，有能力的人們在這個開放創新的過程中發光發熱，共創價值。當我們能夠靠自己發願的力量，把世界上最複雜的科技產品打造出來，實踐改變和刺激產業昇華的夢想將不是遙不可及！</p>
+          <div class="row">
+            <div class="columns small-12 medium-4"><span class="fa fa-group fa-4x"></span>
+              <h2>共創</h2>
+              <p>維護共創機制</p>
+              <p>引領共創價值</p>
+            </div>
+            <div class="columns small-12 medium-4"><span class="fa fa-flash fa-4x"></span>
+              <h2>對話</h2>
+              <p>建立產業對話平台</p>
+              <p>協助產業資源轉動</p>
+            </div>
+            <div class="columns small-12 medium-4"><span class="fa fa-group fa-4x"></span>
+              <h2>認同</h2>
+              <p>協助任何人，監督品質</p>
+              <p>打造自己認同的國民科技產品</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="structure" data-magellan-destination="structure">
+        <div class="column small-11 medium-8 small-centered">
+          <h1>運作架構</h1>
+          <p class="description">HanGee 試圖設計一個完善的開放運作架構，容納各方的想法與資源，再借國內產業的量產能力優勢，服務商的包裝能力加值，進一步成就共創價值。</p>
+        </div>
+      </section>
+      <section id="quote">
+        <div class="column small-11 medium-8 small-centered">
+          <blockquote>In real open source, you have the right to control your own destiny.
+            <cite>Linus Torvalds</cite>
+          </blockquote>
+        </div>
+      </section>
+      <section id="partner" data-magellan-destination="partner">
+        <div class="column small-11 medium-9 small-centered">
+          <h1>支持單位</h1>
+          <div class="org_group clearfix"><a href="http://www.mokoversity.com/" target="_blank"><img src="http://cdn.mokoversity.com/images/logo/mokoversity.png"></a><a><img src="https://dchtm6r471mui.cloudfront.net/hackpad.com_5UjDysY4fYo_p.126704_1394996931332_AG%20Style-2.png"></a><a href="https://taiwan-doit.com/" target="_target"><img src="public/img/doit.png"></a><a href="http://www.custardcream.org/" target="_target"><img src="public/img/custard.png"></a></div>
+          <p>* LOGO依時間由左至右，由上而下排序</p>
+        </div>
+      </section>
+      <section id="join" data-magellan-destination="join">
         <div class="column small-11 medium-8 small-centered">
           <h1>Join to make a difference</h1>
-          <p>歡迎有想法、有熱誠的夥伴，加入我們的行列</p>
+          <p class="description">歡迎有想法、有熱誠的夥伴，加入我們的行列</p>
           <ul>
             <li><a href="mailto:owahangee@gmail.com" target="_top" class="fa fa-envelope fa-2x"></a></li>
             <li><a href="https://github.com/HanGee" target="_blanck" class="fa fa-github fa-2x"></a></li>
@@ -75,6 +119,10 @@
       </section>
     </div>
     <script src="vendor/jquery/dist/jquery.min.js"></script>
-    <!--script(src='public/js/main.min.js')-->
+    <script src="vendor/foundation/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      
+    </script>
   </body>
 </html>
