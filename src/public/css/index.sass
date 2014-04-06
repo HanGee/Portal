@@ -4,47 +4,88 @@
 // @extend .success
 // @extend .right
 
-$section-padding: 13em 2em
+$section-padding: 11em 2em
 $gray-bg: #f5f5f5
+$font-fa: 'Roboto', '微軟正黑體', 'Microsoft Jhenghei', 'Helvetica Neue', Helvetica, Arial, sans-serif
+
 .icon_round
   display: inline-block
   text-align: center
-  color: #fff
-  border: 1px solid #fff
+  color: #777
+  border: 1px solid #bbb
   height: 2em
   width: 2em
   line-height: 2em
   border-radius: 100%
-  background: rgba(255,255,255,0.25)
 
 section 
   padding: $section-padding
   text-align: center
   background: $gray-bg
-  h1, p
+  h1, h4, p
     color: #666
-    font-family: 'Roboto', '微軟正黑體', 'Microsoft Jhenghei', 'Helvetica Neue', Helvetica, Arial, sans-serif
+    font-family: $font-fa
   h1
     margin-bottom: 0.5em
-.begins
+#begins
   background: #fff
 
-.main
+#intro
   background: url('../img/header.jpg')
   background-size: cover
-  padding: 17em 3em
-  
-.goal
-  background: url('../img/overlay.png'), linear-gradient(45deg, #b39c68, #a56365, #412e4c)
-  padding: 13em 1em
-  h2 
+  padding: 14em 3em
+  h1
+    font-size: 4em
+    margin-bottom: 0.3em
+  h4
+    margin-bottom: 2em
+    span
+      border-bottom: 1px solid #e2e2e2
+      padding-bottom: 3px
+
+  a.start
+    font-family: $font-fa
+    border-radius: 100%
+    width: 4.5em
+    height: 4.5em
+    line-height: 4.5em
+    text-align: center
+    font-size: 1.25em
+    padding: 0
+    display: inline-block
+    background: #df7366
     color: #fff
-    font-family: "Roboto"
+  a.start:hover
+    color: #fff
+    background: #ef8376
+  
+#goal
+  background: #fff
+  h1, h2, p
+    color: #777
+  p.description
+    text-align: justify
+    line-height: 1.9
+    margin-bottom: 2.5em
+  h2
+    margin-bottom: 0.5em
+  .columns p
+    margin-bottom: 0.3em
   .fa
     @extend .icon_round
     margin-bottom: 25px
 
-.intro
+#partner
+  .org_group
+    padding: 10px
+    margin: 1em auto
+    height: 220px
+    a
+      float: left
+      width: 23%
+      margin: 0 1%
+
+#idea
   text-align: justify
   .author
     padding: 1em 0
@@ -52,6 +93,18 @@ section
     float: right
   p
     line-height: 1.9
+
+#quote
+  background: url('../img/sail.jpg')
+  background-size: cover
+  blockquote
+    font-size: 2em
+    text-align: left
+    color: #EEE
+    cite
+      color: #EEE
+      margin-top: 1.5em
+      font-size: 0.5em
 
 #join
   padding: 10em 1em
@@ -78,7 +131,7 @@ section
     
 
 .white 
-  h1, p
+  h1, h4, p
     color: #fff
     text-shadow: 1px 0px 2px #666
 

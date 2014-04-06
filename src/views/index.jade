@@ -6,7 +6,6 @@ block meta
   title HanGee 
 block content
 
-  include partial/_navbar
   include partial/_main
 
 
@@ -16,5 +15,7 @@ block content
 
 block script
   script(src='vendor/jquery/dist/jquery.min.js')
-  //script(src='public/js/main.min.js')
+  script(src='vendor/foundation/js/foundation.min.js')
+  script.
+    $(document).foundation();
 
