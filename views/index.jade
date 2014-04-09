@@ -1,7 +1,7 @@
 extends layout
 
 block style
-  link(rel='stylesheet', type='text/css', href='public/css/style.css')
+  link(rel='stylesheet', type='text/css', href='/build/css/style.css')
 block meta 
   title HanGee 
 block content
@@ -14,8 +14,8 @@ block content
 
 
 block script
-  script(src='vendor/jquery/dist/jquery.min.js')
-  script(src='vendor/foundation/js/foundation.min.js')
+  script(src='/vendor/jquery/dist/jquery.min.js')
+  script(src='/vendor/foundation/js/foundation.min.js')
   script.
     $(document).foundation();
 

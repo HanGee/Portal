@@ -10,10 +10,10 @@ lib-cov
 pids
 logs
 results
-build
+public/build
+public/vendor
 .sass-cache
 .grunt
 
 npm-debug.log
 node_modules
-src/vendor

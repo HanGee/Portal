@@ -1,10 +1,10 @@
 {
   "name": "HanGee",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "description": "HanGee Portal",
   "main": "gruntfile.js",
   "scripts": {
-    "start": "grunt",
+    "start": "npm i && grunt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,15 +16,17 @@
     "url": "https://github.com/HanGee/Portal/issues"
   },
   "homepage": "https://github.com/HanGee/Portal",
+  "dependencies": {
+    "express": "3.4.8",
+    "jade": "*",
+    "grunt-contrib-copy": "~0.5.0"
+  },
   "devDependencies": {
     "grunt": "~0.4.2",
-    "grunt-gh-pages": "~0.9.0",
-    "grunt-contrib-copy": "~0.5.0",
+    "grunt-cli": "~0.1.13",
     "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-jade": "~0.10.0",
     "grunt-contrib-uglify": "~0.3.2",
     "grunt-contrib-sass": "~0.7.2",
-    "grunt-cli": "~0.1.13",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-bower-task": "~0.3.4"
   }
