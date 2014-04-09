@@ -64,6 +64,11 @@ module.exports = function (grunt) {
           }
         }
       },
+      open: {
+        dev: {
+          path: 'http://localhost:3000/'
+        }
+      },
       forever: {
         server: {
           options: {
