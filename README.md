@@ -12,13 +12,27 @@ Portal for HanGee Plan
 
 ## Quick start
 
+setup
+
 ```
 $ git clone git@github.com:HanGee/Portal.git && cd Portal && npm start
 ```
 
+run node server in background
+
+```
+grunt depoly
+```
+
+when stop
+
+```
+grunt forever:server:stop
+```
+
 ## Troubleshooting
 
-If you got the log like:
+If you got the error like:
 
 ```
 Running "sass:main" (sass) task
