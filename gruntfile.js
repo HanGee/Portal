@@ -1,69 +1,96 @@
 module.exports = function (grunt) {
 
     grunt.initConfig({
-        uglify: {
-            options: {
-                mangle: false,
-                sourceMap: 'public/build/js/main.min.js.map'
-            },
-            target: {
-                files: {
-                    'public/build/js/main.js': ['public/js/*.js']
-                }
-            }
-        },
-        copy: {
-          image: {
-            files: [
-              {
-                expand: true,
-                cwd: 'public/img',
-                src: '**.*{png,jpg,svg}',
-                dest: 'public/build/img/'
+      uglify: {
+          options: {
+              mangle: false,
+              sourceMap: 'public/build/js/main.min.js.map'
+          },
+          target: {
+              files: {
+                  'public/build/js/main.js': ['public/js/*.js']
               }
-            ]
           }
-        },
-        sass: {
-            main: {
-                options: {
-                    compass: true
-                },
-                files: {
-                    'public/build/css/style.css': 'public/css/style.sass'
-                }
+      },
+      copy: {
+        image: {
+          files: [
+            {
+              expand: true,
+              cwd: 'public/img',
+              src: '**.*{png,jpg,svg}',
+              dest: 'public/build/img/'
             }
-        },
-        watch: {
-            options: {
-                livereload: true,
-            },
-            sass: {
-                files: ['public/css/**/*.sass'],
-                tasks: ['sass'],
-                options: {
-                    //
-                }
-            },
-            js: {
-                files: ['public/js/*.js'],
-                tasks: ['uglify'],
-                options: {
-                    //
-                }
-            }
-        },
-        clean: {
-          build: ['public/build']
-        },
-        bower: {
-          install: {
-            options: {
-              copy: false,
-              verbose: true
-            }
+          ]
+        }
+      },
+      sass: {
+          main: {
+              options: {
+                  compass: true
+              },
+              files: {
+                  'public/build/css/style.css': 'public/css/style.sass'
+              }
+          }
+      },
+      watch: {
+          options: {
+              livereload: true,
+          },
+          sass: {
+              files: ['public/css/**/*.sass'],
+              tasks: ['sass'],
+              options: {
+                  //
+              }
+          },
+          js: {
+              files: ['public/js/*.js'],
+              tasks: ['uglify'],
+              options: {
+                  //
+              }
+          }
+      },
+      clean: {
+        build: ['public/build']
+      },
+      bower: {
+        install: {
+          options: {
+            copy: false,
+            verbose: true
           }
         }
+      },
+      forever: {
+        server: {
+          options: {
+            index: 'app.js',
+            logDir: 'logs'
+          }
+        }
+      }
+    });
+
+    grunt.registerTask('start', 'run server', function() {
+      
+      var nodemon = grunt.util.spawn({
+        cmd: 'nodemon',
+        args: ['app.js']
+      });
+
+      nodemon.stdout.pipe(process.stdout);
+      nodemon.stderr.pipe(process.stderr);
+
+      var done = this.async();
+
+      setTimeout(function() {
+        grunt.task.run('open');
+        done();
+      }, 400);
+
     });
 
     grunt.loadNpmTasks('grunt-contrib-watch');
@@ -72,7 +99,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-bower-task');
+    grunt.loadNpmTasks('grunt-forever');
+    grunt.loadNpmTasks('grunt-open');
 
-    grunt.registerTask('default', ['build', 'watch']);
+    grunt.registerTask('default', ['build', 'start', 'watch']);
+    grunt.registerTask('depoly', ['build', 'forever:server:start'])
     grunt.registerTask('build', ['clean:build', 'bower', 'copy', 'uglify', 'sass']);
 };
