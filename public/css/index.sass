@@ -33,31 +33,33 @@ section
 #intro
   background: url('../img/header.jpg')
   background-size: cover
-  padding: 14em 3em
+  padding: 10em 3em
   h1
-    font-size: 4em
-    margin-bottom: 0.3em
+    font-size: 3.5em
+    margin: 1em 0 0.5em
   h4
     margin-bottom: 2em
     span
       border-bottom: 1px solid #e2e2e2
       padding-bottom: 3px
 
-  a.start
+  a.logo_idea
     font-family: $font-fa
     border-radius: 100%
-    width: 4.5em
-    height: 4.5em
-    line-height: 4.5em
+    width: 5.5em
+    height: 5.5em
+    line-height: 5.5em
     text-align: center
-    font-size: 1.25em
+    font-size: 1.5rem
     padding: 0
     display: inline-block
-    background: #df7366
-    color: #fff
-  a.start:hover
+    background: #ececec
+    border: 4px dotted #888
+    color: #555
+  a.logo_idea:hover
     color: #fff
     background: #ef8376
+    border: 4px solid #fff
   
 #goal
   background: #fff
@@ -150,3 +152,22 @@ section
 
 section#footer
   padding: 3em 2em
+
+
+@include keyframes(bounce) 
+  0%, 20%, 50%, 80%, 100% 
+    @include transform(translateY(0))
+  40% 
+    @include transform(translateY(-30px))
+  60% 
+    @include transform(translateY(-15px))
+
+.arrow 
+  display: block
+  width: 60px
+  height: 60px
+  background-image: url("../img/arrow-down-white.png")
+  background-size: contain
+  margin: 0 auto
+.bounce 
+  @include animation(bounce 2s infinite)

@@ -25,6 +25,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+app.get('/request', routes.requestPage);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('HanGee Portal is on port ' + app.get('port'));

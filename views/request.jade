@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 hi
+  ul
+    - for req in requests
+      li=req.title
+    
