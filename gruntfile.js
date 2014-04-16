@@ -108,6 +108,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-open');
 
     grunt.registerTask('default', ['build', 'start', 'watch']);
-    grunt.registerTask('depoly', ['build', 'forever:server:start'])
+    grunt.registerTask('deploy', ['build', 'forever:server:start'])
     grunt.registerTask('build', ['clean:build', 'bower', 'copy', 'uglify', 'sass']);
 };
