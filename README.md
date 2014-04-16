@@ -24,7 +24,7 @@ $ git clone git@github.com:HanGee/Portal.git && cd Portal && npm start
 run node server in background
 
 ```
-grunt depoly
+grunt deploy
 ```
 
 when stop
