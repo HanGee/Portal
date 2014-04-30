@@ -19,7 +19,7 @@ $ git clone git@github.com:HanGee/Portal.git && cd Portal && npm start
 ```
 
 
-## Depoly
+## Deploy
 
 run node server in background
 
